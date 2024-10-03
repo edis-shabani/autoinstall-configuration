@@ -6,24 +6,25 @@ autoinstall:
   network:
     network:
       version: 2
+      renderer: networkd
       ethernets:
-        enp0s25:
-          dhcp4: yes
-        enp3s0: {}
-        enp4s0: {}
-      bonds:
-        bond0:
-          dhcp4: yes
-          interfaces:
-            - enp3s0
-            - enp4s0
-          parameters:
-            mode: active-backup
-            primary: enp3s0
+        eth0:
+          addresses:
+            - 10.10.10.2/24
+          routes:
+            - to: default
+              via: 10.10.10.1
+          nameservers:
+            search:
+              - mydomain
+              - otherdomain
+            addresses:
+              - 10.10.10.1
+              - 1.1.1.1
   locale: en_US
   keyboard:
     layout: us
-    variant: ""
+    variant: ''
     toggle: null
   source:
     id: ubuntu-server-minimal
