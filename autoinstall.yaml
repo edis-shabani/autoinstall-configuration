@@ -2,7 +2,7 @@ autoinstall:
   version: 1
   identity:
     username: vamed
-    password: $crypted_pass
+    password: $6$bK4wtIa1izaQ2cW$.SyrBMJC0Fe3NcsilhPodpR6o3dywCWvaAvQyG8VekuIgp5d457ohBLTYZo6BN/HuYOkklkPapkt2TXEYTsgt1
   network:
     network:
       version: 2
