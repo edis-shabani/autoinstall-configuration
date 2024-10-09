@@ -22,5 +22,4 @@ autoinstall:
             addresses:
               - 10.10.10.1
               - 1.1.1.1
-  source:
-    id: ubuntu-server-minimal
+  timezone: Etc/UTC
