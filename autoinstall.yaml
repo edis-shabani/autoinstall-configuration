@@ -22,7 +22,5 @@ autoinstall:
             addresses:
               - 10.10.10.1
               - 1.1.1.1
-  keyboard:
-    layout: us
-    variant: ''
-    toggle: null
+  source:
+    id: ubuntu-server-minimal
