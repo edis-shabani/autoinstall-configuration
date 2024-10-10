@@ -23,3 +23,6 @@ autoinstall:
               - 10.10.10.1
               - 1.1.1.1
   locale: en_US
+  keyboard:
+    layout: us
+  timezone: Etc/UTC
