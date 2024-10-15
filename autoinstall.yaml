@@ -25,8 +25,6 @@ autoinstall:
   locale: en_US
   keyboard:
     layout: us
-    variant: ''
-    toggle: null
   source:
-    id: ubuntu-desktop-minimal
+    id: ubuntu-server-minimal
   timezone: Etc/UTC
