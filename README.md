@@ -9,7 +9,7 @@ The autoinstall configuration file is written in YAML format and includes variou
 version: 1
 ```
 
-This specifies the version of the autoinstall schema being used. Currently, only version 1 is supported.\
+This specifies the version of the autoinstall schema being used. Currently, only version 1 is supported.
 
 ### Identity
 ```yaml
