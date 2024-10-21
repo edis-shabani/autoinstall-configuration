@@ -94,7 +94,7 @@ To use this autoinstall configuration, include the YAML file in your installatio
 
 # Autoinstall by way of cloud-config
 
-When providing autoinstall via cloud-init, the autoinstall configuration is provided as **Cloud config data**. This means the file requires a '#cloud-config' header and the autoinstall directives are placed under a top level 'autoinstall:' key:
+When providing autoinstall via cloud-init, the autoinstall configuration is provided as **Cloud config data**. This means the file requires a `#cloud-config` header and the autoinstall directives are placed under a top level `autoinstall:` key:
 
 
 
