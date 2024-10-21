@@ -92,9 +92,24 @@ Specifies commands to run late in the installation process. In this example, hto
 ## Usage
 To use this autoinstall configuration, include the YAML file in your installation media or provide it via a network location accessible during the installation process.
 
-# Autoinstall by way of cloud-config
+### Autoinstall by way of cloud-config
 
 When providing autoinstall via cloud-init, the autoinstall configuration is provided as **Cloud config data**. This means the file requires a `#cloud-config` header and the autoinstall directives are placed under a top level `autoinstall:` key:
+
+```yaml
+#cloud-config
+autoinstall:
+    version: 1
+    ....
+```
+
+The configuration has to be in a file named `user-data`. Also, an empty file named `meta-data`  has to be present in the same directory.
+
+At he start of the installation process edit the grub menu entry so it points at the root directory of the `user-data` configuration file:
+
+```
+linux /casper/vmlinuz autoinstall ds=nocloud-net\;s=http://192.168.10.10:3003/ ---
+```
 
 
 
