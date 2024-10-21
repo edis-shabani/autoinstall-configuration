@@ -105,7 +105,11 @@ autoinstall:
 
 The configuration has to be in a file named `user-data`. Also, an empty file named `meta-data`  has to be present in the same directory.
 
-At he start of the installation process edit the grub menu entry so it points at the root directory of the `user-data` configuration file:
+When the machine starts, press and hold the following key to launch the GRUB menu:
+* on machines with `BIOS` / `MBR`: the left `SHIFT` key
+* on machines with `UEFI` / `GPT`: the `ESC` key
+
+Edit the grub menu entry so it points at the root directory of the `user-data` configuration file:
 
 ```
 linux /casper/vmlinuz autoinstall ds=nocloud-net\;s=http://192.168.10.10:3003/ ---
