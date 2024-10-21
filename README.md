@@ -92,4 +92,10 @@ Specifies commands to run late in the installation process. In this example, hto
 ## Usage
 To use this autoinstall configuration, include the YAML file in your installation media or provide it via a network location accessible during the installation process.
 
+# Autoinstall by way of cloud-config
+
+When providing autoinstall via cloud-init, the autoinstall configuration is provided as **Cloud config data**. This means the file requires a '#cloud-config' header and the autoinstall directives are placed under a top level 'autoinstall:' key:
+
+
+
 For more details on how to use autoinstall configurations, refer to the [Autoinstall Reference Manual](https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html).
